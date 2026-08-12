@@ -1,2 +1,8 @@
 Nurbek Shakkhat 
 DevOps 
+
+Сначала я инициализировал локальный репозиторий, создал стартовый README.md и запушил его в ветку main на Гитхабе (git init, cat > README.md, git add ., git commit -m "Ishodniy commmit", git branch -M main, git remote add origin [https://github.com/pccsen/PS_task1.git](https://github.com/pccsen/PS_task1.git), git push -u origin main), затем отпочковал первую ветку feature/nurbek1, создал там файл nurbek1_ps.txt и отправил на удалёнку (git checkout -b feature/nurbek1, cat > nurbek1_ps.txt, git add ., git commit -m "feat: add new f", git push -u origin feature/nurbek1), после вернулся в main и сделал вторую ветку feature/nurbek2 с файлом nurbek2_ps.txt (git checkout main, git checkout -b feature/nurbek2, cat > nurbek2_ps.txt, git add ., git commit -m "feat: add new txt file", git push -u origin feature/nurbek2), следом создал общую ветку combined-features и затянул туда нужные коммиты из обеих фича-веток через cherry-pick (git checkout main, git checkout -b combined-features, git cherry-pick feature/nurbek1, git cherry-pick feature/nurbek2, git push -u origin combined-features), а в конце от созданной combined-features сделал ветку release, смержил всё окончательно и запушил итоговый результат на Гитхаб (git checkout -b release, git merge combined-features -m "merge: combined features into release", git push -u origin release).
+
+<img width="673" height="645" alt="Снимок экрана — 2026-08-12 в 17 33 22" src="https://github.com/user-attachments/assets/f3def21d-fcd8-491a-823c-e83be15dc6bd" />
+
+<img width="803" height="137" alt="Снимок экрана — 2026-08-12 в 17 33 50" src="https://github.com/user-attachments/assets/c27a68b5-4b65-43da-9b6d-e50324eea454" />
